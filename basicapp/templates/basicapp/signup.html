@@ -1,0 +1,25 @@
+{% extends "basicapp/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+      <div class="booth">
+        <video id="video" width="400" height="300"></video>
+        <a href="#" id="capture" class="booth-capture-button">Take Photo</a>
+        <canvas id="canvas" width="=400" height="300"></canvas>
+      </div>
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <fieldset class="form-group">
+            <legend class="border-bottom mb-4">User Register</legend>
+            {{form|crispy}}
+          </fieldset>
+          <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Register</button>
+          </div>
+        </form>
+    </div>
+    {% endblock content %}
+    
+
+
+ 
