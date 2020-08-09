@@ -1,7 +1,6 @@
 from django import forms
 from .models import *
 
-from camera_imagefield import CameraImageField
 
 class SignUpForm(forms.ModelForm):
     visitor_name=forms.CharField(max_length=100,widget=forms.TextInput(attrs={'class':"forms-control"}))

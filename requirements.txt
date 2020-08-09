@@ -1,0 +1,12 @@
+django
+django-rest-framework
+faker
+pytz
+ipdb
+python-decouple
+whitenoise
+dj-database-url
+gunicorn
+psycopg2-binary
+django-crispy-forms
+Pillow
